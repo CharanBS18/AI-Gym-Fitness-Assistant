@@ -1,0 +1,6 @@
+streamlit==1.37.0
+requests==2.34.2
+streamlit-webrtc==0.47.9
+mediapipe==0.10.21
+av==17.1.0
+numpy==1.26.4

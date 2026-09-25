@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 2.5rem;
+  background: #F1F4F9;
+  border-bottom: 1px solid #E2E8F0;
+  flex-wrap: wrap;
+}
+.navbar .brand { font-weight: 800; font-size: 1.2rem; color: #111827; }
+.navbar .brand a { color: #111827; display: flex; align-items: center; gap: 8px; }
+.navbar .nav-links { display: flex; gap: 0.5rem; flex-wrap: wrap; flex: 1; }
+.navbar .nav-links a {
+  color: #64748B;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+.navbar .nav-links a:hover {
+  background: #E2E8F0;
+  color: #111827;
+}
+.navbar .logout-btn {
+  padding: 0.5rem 1.2rem;
+  background: #FFFFFF;
+  color: #334155;
+  border: 1px solid #CBD5E1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.navbar .logout-btn:hover {
+  background: #F1F5F9;
+}
+
+.content {
+  max-width: 1300px;
+  margin: 2rem auto;
+  padding: 2.5rem 3rem;
+  background: #FFFFFF;
+  border-radius: 36px;
+  box-shadow: 0 24px 50px -12px rgba(27, 43, 74, 0.12);
+}
+
+.dashboard h1 { margin-bottom: 0.2rem; font-weight: 800; font-size: 2rem; }
+.dashboard > p { color: var(--text-muted); margin-top: 0; }
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+.module-card {
+  background: #FFFFFF;
+  border: 1px solid #EEF2F6;
+  border-radius: 22px;
+  padding: 1.4rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+}
+.module-card:hover {
+  border-color: #FF5B26;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 91, 38, 0.12);
+}
+.module-card h3 { margin: 0 0 0.4rem; color: var(--text); font-size: 1.1rem; font-weight: 800; }
+.module-card p { margin: 0; color: var(--text-muted); font-size: 0.9rem; line-height: 1.4; }
+
+.auth-card {
+  max-width: 440px;
+  margin: 4rem auto;
+  background: #FFFFFF;
+  padding: 2.5rem;
+  border-radius: 28px;
+  border: 1px solid #EEF2F6;
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.08);
+}
+.auth-card form { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.2rem; }
+.auth-card p { margin-top: 1.2rem; text-align: center; color: var(--text-muted); }
+
+.page h2 { margin-bottom: 0.2rem; font-weight: 800; font-size: 1.8rem; }
+.muted { color: var(--text-muted); font-size: 0.95rem; }
+.error { color: #EF4444; font-weight: 600; }
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.9rem;
+  margin: 1.2rem 0;
+}
+.grid-form button { grid-column: 1 / -1; }
+
+.result-card {
+  background: #FFFFFF;
+  border: 1px solid #EEF2F6;
+  border-radius: 22px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+}
+.result-card h3, .result-card h4 { margin-top: 0; font-weight: 800; }
+.grocery-list { columns: 2; }
+
+.workout-controls { display: flex; gap: 1rem; align-items: center; margin: 1rem 0; flex-wrap: wrap; }
+
+.video-wrap { position: relative; width: fit-content; }
+.pose-canvas { width: 100%; max-width: 640px; border-radius: 20px; border: 1px solid #E2E8F0; background: #000; }
+
+.live-stats { display: flex; gap: 1.5rem; margin-top: 1rem; font-size: 1rem; font-weight: 700; }
+.live-stats .warn { color: #F59E0B; }
+
+.chat-window {
+  background: #F8FAFC;
+  border: 1px solid #EEF2F6;
+  border-radius: 22px;
+  padding: 1.2rem;
+  height: 400px;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+.chat-turn { margin-bottom: 1rem; }
+.chat-bubble { padding: 0.75rem 1.1rem; border-radius: 16px; max-width: 80%; margin: 0.3rem 0; font-size: 0.95rem; line-height: 1.4; }
+.chat-bubble.user { background: #111827; color: #FFFFFF; margin-left: auto; text-align: right; }
+.chat-bubble.bot { background: #FFF7F4; border: 1px solid #FFE4D9; color: #1E293B; }
+.mood-tag { color: #FF5B26; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
+.chat-input { display: flex; gap: 0.8rem; margin-top: 1rem; }
+.chat-input input { flex: 1; }
+
+.nudge { font-style: italic; color: #6D28D9; }
+.score { font-size: 1.4rem; font-weight: 800; color: #111827; }
+
+.gym-list { display: flex; flex-direction: column; gap: 1rem; }
+
